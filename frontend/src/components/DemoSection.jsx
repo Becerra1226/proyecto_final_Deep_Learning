@@ -133,7 +133,7 @@ function DemoSection() {
                         font-medium
                     ">
 
-                        AI Demonstration
+                        Demostración de IA
 
                     </p>
 
@@ -147,11 +147,11 @@ function DemoSection() {
                         leading-tight
                     ">
 
-                        Analyze Satellite Images
+                        Analizar Imágenes Satelitales
 
                         <span className="text-emerald-400">
 
-                            {" "}Using AI
+                            {" "}Usando IA
 
                         </span>
 
@@ -166,10 +166,9 @@ function DemoSection() {
                         leading-relaxed
                     ">
 
-                        Upload a satellite image and let the deep learning
-                        model identify environmental patterns associated
-                        with deforestation, illegal mining,
-                        illicit crops or clandestine airstrips.
+                        Sube una imagen satelital y deja que el modelo de aprendizaje profundo
+                        identifique patrones ambientales asociados con deforestación,
+                        minería ilegal, cultivos ilícitos o pistas de aterrizaje clandestinas.
 
                     </p>
 
@@ -220,7 +219,7 @@ function DemoSection() {
 
                                     <img
                                         src={preview}
-                                        alt="preview"
+                                        alt="vista previa"
                                         className="
                                             w-full
                                             h-full
@@ -266,7 +265,7 @@ function DemoSection() {
                                             mb-4
                                         ">
 
-                                            Upload Image
+                                            Subir Imagen
 
                                         </h3>
 
@@ -277,9 +276,9 @@ function DemoSection() {
                                             leading-relaxed
                                         ">
 
-                                            Drag and drop or select a satellite
-                                            image to analyze environmental
-                                            patterns using artificial intelligence.
+                                            Arrastra y suelta o selecciona una imagen
+                                            satelital para analizar patrones ambientales
+                                            utilizando inteligencia artificial.
 
                                         </p>
 
@@ -350,7 +349,7 @@ function DemoSection() {
 
                             <ScanSearch size={24} />
 
-                            Analyze Image
+                            Analizar Imagen
 
                         </button>
 
@@ -399,7 +398,7 @@ function DemoSection() {
                                             font-semibold
                                         ">
 
-                                            AI Processing Image
+                                            IA Procesando Imagen
 
                                         </p>
 
@@ -411,9 +410,9 @@ function DemoSection() {
                                         leading-relaxed
                                     ">
 
-                                        The deep learning model is analyzing
-                                        satellite patterns and detecting
-                                        potential environmental crimes.
+                                        El modelo de aprendizaje profundo está analizando
+                                        patrones satelitales y detectando posibles
+                                        delitos ambientales.
 
                                     </p>
 
@@ -481,7 +480,7 @@ function DemoSection() {
                                                 mb-1
                                             ">
 
-                                                Detection Result
+                                                Resultado de Detección
 
                                             </p>
 
@@ -512,7 +511,7 @@ function DemoSection() {
 
                                             <p className="text-slate-400">
 
-                                                Confidence
+                                                Confianza
 
                                             </p>
 
@@ -593,7 +592,7 @@ function DemoSection() {
                                     font-bold
                                 ">
 
-                                    Supported Classes
+                                    Clases Soportadas
 
                                 </h3>
 
@@ -608,12 +607,12 @@ function DemoSection() {
 
                                 {
                                     [
-                                        "Forest",
-                                        "Water",
-                                        "Deforestation",
-                                        "Illegal Mining",
-                                        "Illicit Crops",
-                                        "Airstrips"
+                                        "Bosque",
+                                        "Agua",
+                                        "Deforestación",
+                                        "Minería Ilegal",
+                                        "Cultivos Ilícitos",
+                                        "Pistas de Aterrizaje"
                                     ].map((item, index) => (
 
                                         <div

@@ -93,7 +93,7 @@ function Hero() {
                         "
                     >
 
-                        AI Environmental Monitoring
+                        Monitoreo Ambiental con IA
 
                     </motion.p>
 
@@ -116,17 +116,17 @@ function Hero() {
                         "
                     >
 
-                        Monitoring
+                        Monitoreo de
 
                         <span className="text-emerald-400">
 
-                            {" "}Environmental Crimes
+                            {" "}Delitos Ambientales
 
                         </span>
 
                         <br />
 
-                        Through Computer Vision
+                        mediante Visión por Computadora
 
                     </motion.h1>
 
@@ -148,10 +148,9 @@ function Hero() {
                         "
                     >
 
-                        Artificial intelligence powered satellite image analysis
-                        capable of detecting deforestation, illegal mining,
-                        illicit crops and clandestine airstrips across
-                        remote Amazon regions.
+                        Análisis de imágenes satelitales impulsado por inteligencia artificial,
+                        capaz de detectar deforestación, minería ilegal, cultivos ilícitos 
+                        y pistas de aterrizaje clandestinas en regiones remotas de la Amazonía.
 
                     </motion.p>
 
@@ -169,7 +168,8 @@ function Hero() {
                         className="flex gap-4 flex-wrap"
                     >
 
-                        <button className="
+                        <button onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })} 
+                            className="
                             bg-white
                             text-black
                             px-8
@@ -180,7 +180,7 @@ function Hero() {
                             transition
                         ">
 
-                            Analyze Satellite Image
+                            Analizar Imagen Satelital
 
                         </button>
 
@@ -198,7 +198,7 @@ function Hero() {
                             transition
                         ">
 
-                            Learn More
+                            Saber Más
 
                         </button>
 
@@ -247,7 +247,7 @@ function Hero() {
 
                             src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2071&auto=format&fit=crop"
 
-                            alt="forest"
+                            alt="bosque"
 
                             className="
                                 absolute
@@ -305,7 +305,7 @@ function Hero() {
                                 mb-2
                             ">
 
-                                LIVE DETECTION
+                                DETECCIÓN EN VIVO
 
                             </p>
 
@@ -316,7 +316,7 @@ function Hero() {
                                 mb-3
                             ">
 
-                                Illegal Deforestation
+                                Deforestación Ilegal
 
                             </h3>
 
@@ -328,7 +328,7 @@ function Hero() {
 
                                 <p className="text-slate-300">
 
-                                    Confidence
+                                    Confianza
 
                                 </p>
 

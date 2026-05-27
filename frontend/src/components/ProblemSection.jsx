@@ -15,30 +15,30 @@ const problems = [
 
     {
         icon: Trees,
-        title: "Illegal Deforestation",
+        title: "Deforestación Ilegal",
         description:
-            "Unauthorized logging destroys large forest areas, accelerating biodiversity loss and ecosystem degradation.",
+            "La tala no autorizada destruye grandes áreas de bosque, acelerando la pérdida de biodiversidad y la degradación de los ecosistemas.",
     },
 
     {
         icon: Pickaxe,
-        title: "Illegal Mining",
+        title: "Minería Ilegal",
         description:
-            "River contamination and severe soil degradation caused by unregulated extraction activities.",
+            "Contaminación de ríos y degradación severa del suelo causada por actividades de extracción no reguladas.",
     },
 
     {
         icon: Sprout,
-        title: "Illicit Crops",
+        title: "Cultivos Ilícitos",
         description:
-            "Illegal land use expansion threatens protected ecosystems and increases environmental instability.",
+            "La expansión ilegal del uso de la tierra amenaza los ecosistemas protegidos y aumenta la inestabilidad ambiental.",
     },
 
     {
         icon: Plane,
-        title: "Clandestine Airstrips",
+        title: "Pistas de Aterrizaje Clandestinas",
         description:
-            "Remote illegal infrastructure enables trafficking operations in isolated regions.",
+            "La infraestructura ilegal remota facilita las operaciones de tráfico en regiones aisladas.",
     },
 ];
 
@@ -47,17 +47,17 @@ const challenges = [
 
     {
         icon: Globe,
-        title: "Huge Geographic Extension",
+        title: "Enorme Extensión Geográfica",
     },
 
     {
         icon: Mountain,
-        title: "Limited Access Regions",
+        title: "Regiones de Acceso Limitado",
     },
 
     {
         icon: Radar,
-        title: "Low Real-Time Surveillance",
+        title: "Poca Vigilancia en Tiempo Real",
     },
 ];
 
@@ -132,7 +132,7 @@ function ProblemSection() {
                         font-medium
                     ">
 
-                        Environmental Problematic
+                        Problemática Ambiental
 
                     </p>
 
@@ -146,17 +146,17 @@ function ProblemSection() {
                         leading-tight
                     ">
 
-                        Environmental Crimes
+                        Delitos Ambientales
 
                         <span className="text-emerald-400">
 
-                            {" "}Threatening
+                            {" "}Amenazando
 
                         </span>
 
                         <br />
 
-                        The Amazon Ecosystem
+                        El Ecosistema Amazónico
 
                     </h2>
 
@@ -169,11 +169,10 @@ function ProblemSection() {
                         leading-relaxed
                     ">
 
-                        Large-scale environmental crimes continue to affect
-                        remote Amazon regions through deforestation,
-                        illegal mining, illicit crops, and clandestine
-                        infrastructure, causing severe ecological
-                        and social consequences.
+                        Los delitos ambientales a gran escala continúan afectando
+                        las regiones remotas de la Amazonía a través de la deforestación,
+                        la minería ilegal, los cultivos ilícitos y la infraestructura clandestina,
+                        causando graves consecuencias ecológicas y sociales.
 
                     </p>
 
@@ -336,7 +335,7 @@ function ProblemSection() {
                                 mb-6
                             ">
 
-                                Monitoring Challenges
+                                Desafíos de Monitoreo
 
                             </p>
 
@@ -350,11 +349,11 @@ function ProblemSection() {
                                 mb-8
                             ">
 
-                                Why Traditional Monitoring
+                                Por Qué el Monitoreo Tradicional
 
                                 <span className="text-cyan-400">
 
-                                    {" "}Is Difficult
+                                    {" "}es Difícil
 
                                 </span>
 
@@ -367,10 +366,10 @@ function ProblemSection() {
                                 leading-relaxed
                             ">
 
-                                The Amazon rainforest covers massive remote
-                                territories with difficult physical access,
-                                making traditional environmental monitoring
-                                slow, expensive and inefficient in real time.
+                                La selva amazónica cubre territorios remotos masivos
+                                con difícil acceso físico, lo que hace que el monitoreo
+                                ambiental tradicional sea lento, costoso e ineficiente
+                                en tiempo real.
 
                             </p>
 

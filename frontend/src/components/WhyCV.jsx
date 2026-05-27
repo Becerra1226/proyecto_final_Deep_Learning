@@ -14,30 +14,30 @@ const features = [
 
     {
         icon: Satellite,
-        title: "Satellite Image Analysis",
+        title: "Análisis de Imágenes Satelitales",
         description:
-            "Automated processing of large-scale satellite imagery for environmental monitoring.",
+            "Procesamiento automatizado de imágenes satelitales a gran escala para el monitoreo ambiental.",
     },
 
     {
         icon: ScanSearch,
-        title: "Pattern Detection",
+        title: "Detección de Patrones",
         description:
-            "Identification of environmental crimes through learned visual patterns.",
+            "Identificación de delitos ambientales a través de patrones visuales aprendidos.",
     },
 
     {
         icon: Activity,
-        title: "Real-Time Monitoring",
+        title: "Monitoreo en Tiempo Real",
         description:
-            "Continuous surveillance capabilities across remote and inaccessible regions.",
+            "Capacidades de vigilancia continua en regiones remotas e inaccesibles.",
     },
 
     {
         icon: ShieldCheck,
-        title: "Scalable Environmental Protection",
+        title: "Protección Ambiental Escalable",
         description:
-            "AI-driven monitoring enables faster response and better environmental control.",
+            "El monitoreo impulsado por IA permite una respuesta más rápida y un mejor control ambiental.",
     },
 ];
 
@@ -114,7 +114,7 @@ function WhyComputerVision() {
                             font-medium
                         ">
 
-                            Why Computer Vision
+                            Por Qué Visión por Computadora
 
                         </p>
 
@@ -128,17 +128,17 @@ function WhyComputerVision() {
                             mb-8
                         ">
 
-                            Artificial Intelligence
+                            Inteligencia Artificial
 
                             <span className="text-cyan-400">
 
-                                {" "}For Large-Scale
+                                {" "}Para el Monitoreo
 
                             </span>
 
                             <br />
 
-                            Environmental Monitoring
+                            Ambiental a Gran Escala
 
                         </h2>
 
@@ -151,12 +151,12 @@ function WhyComputerVision() {
                             max-w-2xl
                         ">
 
-                            Computer vision enables automated analysis of
-                            satellite imagery, allowing early detection of
-                            environmental crimes in regions that are difficult
-                            to access physically. By leveraging deep learning,
-                            the system can identify complex visual patterns
-                            associated with illegal activities across the Amazon.
+                            La visión por computadora permite el análisis automatizado de
+                            imágenes satelitales, facilitando la detección temprana de
+                            delitos ambientales en regiones de difícil acceso físico.
+                            Al aprovechar el aprendizaje profundo, el sistema puede identificar
+                            patrones visuales complejos asociados con actividades ilegales
+                            en toda la Amazonía.
 
                         </p>
 
@@ -191,7 +191,7 @@ function WhyComputerVision() {
 
                                 <p className="text-slate-400">
 
-                                    Continuous Monitoring
+                                    Monitoreo Continuo
 
                                 </p>
 
@@ -214,13 +214,13 @@ function WhyComputerVision() {
                                     mb-2
                                 ">
 
-                                    AI
+                                    IA
 
                                 </h3>
 
                                 <p className="text-slate-400">
 
-                                    Automated Detection
+                                    Detección Automatizada
 
                                 </p>
 
