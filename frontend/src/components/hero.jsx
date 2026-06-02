@@ -296,6 +296,7 @@ function Hero() {
                                 border-white/10
                                 rounded-2xl
                                 p-6
+                                interactive-card
                             "
                         >
 

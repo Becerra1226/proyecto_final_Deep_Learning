@@ -5,6 +5,9 @@ const navItems = [
     { label: "Inicio", href: "#home" },
     { label: "Problema", href: "#problem" },
     { label: "Visión Artificial", href: "#vision" },
+    { label: "Pipeline", href: "#pipeline" },
+    { label: "Resultados", href: "#results" },
+    { label: "Analisis", href: "#analysis" },
     { label: "Demo", href: "#demo" },
 ];
 
@@ -30,7 +33,7 @@ function Navbar() {
                 </div>
 
                 {/* NAV LINKS */}
-                <div className="hidden md:flex items-center gap-8">
+                <div className="hidden md:flex items-center gap-5">
                     {navItems.map((item, index) => (
                         <a
                             key={index}

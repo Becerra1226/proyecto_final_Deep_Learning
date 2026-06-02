@@ -8,8 +8,63 @@ import {
     Upload,
     ImageIcon,
     ScanSearch,
-    CheckCircle2
+    CheckCircle2,
+    Info
 } from "lucide-react";
+
+const classContext = {
+    water: {
+        label: "Agua",
+        summary:
+            "El modelo identifica cuerpos de agua como rios, lagunas o zonas inundadas visibles en la imagen satelital.",
+        meaning:
+            "Esta clase ayuda a separar coberturas naturales de agua frente a zonas alteradas, y tambien sirve como referencia para revisar cambios cerca de rios o areas con actividad minera.",
+    },
+    deforestation: {
+        label: "Deforestacion",
+        summary:
+            "El modelo detecta perdida de cobertura vegetal o claros amplios donde antes podria existir bosque continuo.",
+        meaning:
+            "Este resultado puede indicar tala, expansion de caminos, apertura de terrenos o degradacion del bosque. Debe interpretarse como una alerta visual para priorizar revision.",
+    },
+    forest: {
+        label: "Bosque",
+        summary:
+            "El modelo reconoce cobertura boscosa densa y relativamente continua en la escena satelital.",
+        meaning:
+            "Esta clase representa areas conservadas o con vegetacion predominante. Es util como referencia para comparar con zonas de perdida de bosque o intervencion humana.",
+    },
+    illegal_mining: {
+        label: "Mineria ilegal",
+        summary:
+            "El modelo identifica patrones visuales asociados con extraccion minera, como suelos expuestos, formas irregulares y alteracion cerca de cuerpos de agua.",
+        meaning:
+            "Este resultado sugiere una posible zona de actividad extractiva no regulada. La prediccion no reemplaza verificacion en campo, pero ayuda a ubicar areas de riesgo ambiental.",
+    },
+    illicit_crops_PCCA: {
+        label: "Cultivos ilicitos",
+        summary:
+            "El modelo detecta patrones de parcelas o coberturas agricolas asociadas a cultivos ilicitos en imagenes satelitales.",
+        meaning:
+            "Esta clase funciona como una senal de posible transformacion del uso del suelo. Conviene revisarla junto con contexto geografico, historico y validacion especializada.",
+    },
+    airstrips: {
+        label: "Pistas de aterrizaje",
+        summary:
+            "El modelo reconoce superficies lineales despejadas que pueden corresponder a pistas clandestinas o infraestructura remota.",
+        meaning:
+            "Este resultado puede indicar vias de acceso o infraestructura usada en zonas aisladas. Debe verse como una alerta para analisis complementario.",
+    },
+};
+
+const getClassContext = (className) =>
+    classContext[className] || {
+        label: className,
+        summary:
+            "El modelo encontro un patron visual asociado a una de las clases entrenadas.",
+        meaning:
+            "La prediccion resume la clase con mayor probabilidad segun la CNN y debe revisarse junto con la confianza reportada.",
+    };
 
 
 function DemoSection() {
@@ -212,6 +267,7 @@ function DemoSection() {
                             backdrop-blur-xl
                             overflow-hidden
                             group
+                            interactive-card
                         ">
 
                             {
@@ -372,6 +428,7 @@ function DemoSection() {
                                         rounded-3xl
                                         p-10
                                         backdrop-blur-xl
+                                        interactive-card
                                     "
                                 >
 
@@ -424,7 +481,10 @@ function DemoSection() {
                         {/* RESULTS */}
 
                         {
-                            result && (
+                            result && (() => {
+                                const detectedClass = getClassContext(result.class);
+
+                                return (
 
                                 <motion.div
 
@@ -490,9 +550,87 @@ function DemoSection() {
                                                 font-bold
                                             ">
 
-                                                {result.class}
+                                                {detectedClass.label}
 
                                             </h3>
+
+                                        </div>
+
+                                        </div>
+
+
+                                    {/* CLASS CONTEXT */}
+
+                                    <div className="
+                                        bg-black/20
+                                        border
+                                        border-white/10
+                                        rounded-2xl
+                                        p-6
+                                        mb-8
+                                        interactive-card
+                                    ">
+
+                                        <div className="
+                                            flex
+                                            items-start
+                                            gap-4
+                                        ">
+
+                                            <div className="
+                                                w-12
+                                                h-12
+                                                rounded-2xl
+                                                bg-cyan-500/10
+                                                flex
+                                                items-center
+                                                justify-center
+                                                shrink-0
+                                            ">
+
+                                                <Info
+                                                    size={24}
+                                                    className="text-cyan-400"
+                                                />
+
+                                            </div>
+
+
+                                            <div>
+
+                                                <h4 className="
+                                                    text-white
+                                                    text-xl
+                                                    font-semibold
+                                                    mb-3
+                                                ">
+
+                                                    Que significa esta clase
+
+                                                </h4>
+
+
+                                                <p className="
+                                                    text-slate-300
+                                                    leading-relaxed
+                                                    mb-3
+                                                ">
+
+                                                    {detectedClass.summary}
+
+                                                </p>
+
+
+                                                <p className="
+                                                    text-slate-400
+                                                    leading-relaxed
+                                                ">
+
+                                                    {detectedClass.meaning}
+
+                                                </p>
+
+                                            </div>
 
                                         </div>
 
@@ -560,7 +698,8 @@ function DemoSection() {
                                     </div>
 
                                 </motion.div>
-                            )
+                                );
+                            })()
                         }
 
 
@@ -627,6 +766,7 @@ function DemoSection() {
                                                 border
                                                 border-white/10
                                                 text-slate-300
+                                                interactive-card
                                             "
                                         >
 
