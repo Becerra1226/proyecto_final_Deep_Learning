@@ -176,6 +176,7 @@ function WhyComputerVision() {
                                 rounded-3xl
                                 p-6
                                 backdrop-blur-xl
+                                interactive-card
                             ">
 
                                 <h3 className="
@@ -205,6 +206,7 @@ function WhyComputerVision() {
                                 rounded-3xl
                                 p-6
                                 backdrop-blur-xl
+                                interactive-card
                             ">
 
                                 <h3 className="
@@ -313,6 +315,7 @@ function WhyComputerVision() {
                                                     flex
                                                     gap-5
                                                     items-start
+                                                    interactive-card
                                                 "
                                             >
 

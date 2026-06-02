@@ -225,6 +225,7 @@ function ProblemSection() {
                                         p-8
                                         overflow-hidden
                                         group
+                                        interactive-card
                                     "
                                 >
 
@@ -407,6 +408,7 @@ function ProblemSection() {
                                                 flex
                                                 items-center
                                                 gap-5
+                                                interactive-card
                                             "
                                         >
 
