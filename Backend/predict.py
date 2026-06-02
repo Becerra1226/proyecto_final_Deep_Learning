@@ -24,7 +24,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = SatelliteCNNReg(num_classes=6)
 
 model.load_state_dict(
-    torch.load("../Model/best_reg_cnn.pt", map_location=device)
+    torch.load("../Model/best_base_cnn.pt", map_location=device)
 )
 
 model.to(device)
