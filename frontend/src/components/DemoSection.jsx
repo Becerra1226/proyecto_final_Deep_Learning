@@ -105,7 +105,7 @@ function DemoSection() {
         try {
 
             const response = await axios.post(
-                "http://127.0.0.1:8000/predict",
+                "https://proyecto-final-deep-learning.onrender.com/predict",
                 formData
             );
 
