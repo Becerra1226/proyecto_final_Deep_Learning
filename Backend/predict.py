@@ -1,3 +1,4 @@
+import os
 import torch
 from torchvision import transforms
 from PIL import Image
@@ -20,12 +21,13 @@ CLASSES = [
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "best_base_cnn.pt")
+
 # Cargar modelo
 model = SatelliteCNNReg(num_classes=6)
 
-model.load_state_dict(
-    torch.load("../Model/best_base_cnn.pt", map_location=device)
-)
+model.load_state_dict(torch.load(MODEL_PATH, map_location=device))
 
 model.to(device)
 
