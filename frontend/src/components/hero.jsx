@@ -306,7 +306,7 @@ function Hero() {
                                 mb-2
                             ">
 
-                                DETECCIÓN EN VIVO
+                                DETECCIÓN EN DE IMAGENES SATELITALES
 
                             </p>
 
@@ -339,7 +339,7 @@ function Hero() {
                                     text-xl
                                 ">
 
-                                    97.4%
+                                    79%
 
                                 </p>
 
